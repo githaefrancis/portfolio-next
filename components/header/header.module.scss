@@ -1,0 +1,19 @@
+.header {
+  display: grid;
+  grid-template-columns: 60% auto;
+  padding: 2rem 2rem;
+  height: 24rem;
+  background-color: rgba(#a5afa5,0.1);
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .heading1,
+  .heading2 {
+    text-align: center;
+    margin: 2rem;
+  }
+}
