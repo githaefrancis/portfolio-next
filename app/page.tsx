@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.highlight}>
-        <h2 style={{ textAlign: "center" }}>Top</h2>
+        <h2 className={styles.heading2}>Product Center</h2>
       </div>
     </main>
   );
