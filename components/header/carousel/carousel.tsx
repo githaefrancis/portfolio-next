@@ -9,7 +9,7 @@ export default function Carousel() {
     new Splide("#skillSlide").mount();
   }, []);
   return (
-    <section id="skillSlide" className="splide">
+    <section id="skillSlide" className={`splide ${carouselStyles.container}`}>
       <div className="splide__track">
         <ul className={`splide__list ${carouselStyles.carouselList}`}>
           <li className="splide__slide">
