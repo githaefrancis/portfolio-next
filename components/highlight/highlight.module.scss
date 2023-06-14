@@ -1,6 +1,5 @@
 .highlight {
-  position: relative;
-//   top: -3.2rem;
+//   position: relative;
   border-radius: 8px;
   box-shadow: 0.2px 0.2px 1px rgb(39, 39, 39);
   min-width: 100%;
@@ -14,21 +13,21 @@
   padding: 1rem;
 }
 
-@media only screen and (max-width: 992px) {
-  .highlight {
-    position: static;
-  }
-}
+
 
 .slider {
   display: grid;
-  grid-template-columns: auto 92% auto;
+  grid-template-columns: auto auto auto;
   width: 100%;
   grid-gap: 0.5rem;
   padding: 6px;
   align-items: center;
 }
-
+@media only screen and (max-width: 992px) {
+    .slider{
+      padding: 0px;
+    }
+  }
 .horizontalScroll {
   width: 100%;
 //   margin: 0 0.5rem 0 0.5rem;
