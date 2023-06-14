@@ -3,7 +3,29 @@
   grid-template-columns: 55% auto;
   padding: 2rem 2rem;
   min-height: 24rem;
-  background-color: rgba(#a5afa5, 0.1);
+  //   background-color: rgba(#a5afa5, 0.1);
+  background: hsla(117, 87%, 78%, 1);
+
+  background: radial-gradient(
+    circle,
+    hsla(117, 87%, 78%, 1) 0%,
+    hsla(178, 40%, 75%, 1) 50%,
+    hsla(10, 18%, 93%, 1) 100%
+  );
+
+  background: -moz-radial-gradient(
+    circle,
+    hsla(117, 87%, 78%, 1) 0%,
+    hsla(178, 40%, 75%, 1) 50%,
+    hsla(10, 18%, 93%, 1) 100%
+  );
+
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(117, 87%, 78%, 1) 0%,
+    hsla(178, 40%, 75%, 1) 50%,
+    hsla(10, 18%, 93%, 1) 100%
+  );
 }
 
 .intro {
