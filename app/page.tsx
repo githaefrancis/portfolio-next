@@ -1,12 +1,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-
+import Highlight from "../components/highlight";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.highlight}>
-        <h2 className={styles.heading2}>Product Center</h2>
-      </div>
+      <Highlight />
     </main>
   );
 }
