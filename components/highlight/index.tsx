@@ -6,12 +6,16 @@ export default function Highlight() {
   const scrollContainerRef = useRef<HTMLImageElement>(null);
   const scrollAmount = 100;
 
-  const handleScroll = (event: Event) => {
+  const handleScroll = (event: React.MouseEvent<HTMLImageElement>) => {
     const target = event.target as HTMLButtonElement;
     if (target?.id === "scroll-left") {
-      if(scrollContainerRef.current !==null) {scrollContainerRef.current.scrollLeft -= scrollAmount}
+      if (scrollContainerRef.current !== null) {
+        scrollContainerRef.current.scrollLeft -= scrollAmount;
+      }
     } else if (target?.id === "scroll-right") {
-      if(scrollContainerRef.current !==null ) {scrollContainerRef.current.scrollLeft += scrollAmount}
+      if (scrollContainerRef.current !== null) {
+        scrollContainerRef.current.scrollLeft += scrollAmount;
+      }
     }
   };
 
