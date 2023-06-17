@@ -3,14 +3,15 @@ import { useRef } from "react";
 import styles from "./highlight.module.scss";
 import Image from "next/image";
 export default function Highlight() {
-  const scrollContainerRef = useRef(null);
+  const scrollContainerRef = useRef<HTMLImageElement>(null);
   const scrollAmount = 100;
 
   const handleScroll = (event: Event) => {
-    if (event.target.id === "scroll-left") {
-      scrollContainerRef.current.scrollLeft -= scrollAmount;
-    } else if (event.target.id === "scroll-right") {
-      scrollContainerRef.current.scrollLeft += scrollAmount;
+    const target = event.target as HTMLButtonElement;
+    if (target?.id === "scroll-left") {
+      if(scrollContainerRef.current !==null) {scrollContainerRef.current.scrollLeft -= scrollAmount}
+    } else if (target?.id === "scroll-right") {
+      if(scrollContainerRef.current !==null ) {scrollContainerRef.current.scrollLeft += scrollAmount}
     }
   };
 
