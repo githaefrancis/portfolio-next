@@ -35,14 +35,6 @@ export default function Highlight() {
           <div className={styles.card}></div>
           <div className={styles.card}></div>
           <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
         </section>
         <Image
           priority

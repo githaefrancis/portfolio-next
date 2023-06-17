@@ -1,0 +1,25 @@
+.resources {
+  min-width: 100%;
+  h1 {
+    text-align: center;
+  }
+}
+.container {
+  display: flex;
+  margin: 1rem 1rem;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  height: 12rem;
+  //   flex: 0 0 10rem;
+
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px rgb(48, 46, 46);
+  background-color: aqua;
+  width: 18rem;
+  z-index: 10;
+  display: grid;
+  grid-template-rows: 40% 60%;
+}
