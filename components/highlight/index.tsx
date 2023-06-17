@@ -6,7 +6,7 @@ export default function Highlight() {
   const scrollContainerRef = useRef(null);
   const scrollAmount = 100;
 
-  const handleScroll = (event) => {
+  const handleScroll = (event: Event) => {
     if (event.target.id === "scroll-left") {
       scrollContainerRef.current.scrollLeft -= scrollAmount;
     } else if (event.target.id === "scroll-right") {
