@@ -7,7 +7,6 @@ import carouselStyles from "./carousel.module.scss";
 export default function Carousel() {
   useEffect(() => {
     new Splide("#skillSlide", {
-      type: "loop",
       autoplay: true,
       interval: 3000,
     }).mount();

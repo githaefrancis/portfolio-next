@@ -34,5 +34,11 @@
 @media only screen and (max-width: 576px) {
   .card {
     flex: 1 1 100%;
+    background-color: rgb(33, 24, 24);
+    color: rgb(251, 241, 241);
+    font-weight: 500;
+    a {
+      text-decoration: underline;
+    }
   }
 }
