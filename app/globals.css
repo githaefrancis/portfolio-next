@@ -107,3 +107,7 @@ a {
     color-scheme: dark;
   }
 }
+
+.title {
+  text-align: center;
+}
