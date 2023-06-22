@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import styles from "./highlight.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 export default function Highlight() {
   const scrollContainerRef = useRef<HTMLImageElement>(null);
   const scrollAmount = 100;
@@ -33,13 +34,27 @@ export default function Highlight() {
           onClick={handleScroll}
         />
         <section ref={scrollContainerRef} className={styles.horizontalScroll}>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
+          <Link
+            href="https://prism-gallery.ofasnplugs.com"
+            className={styles.link}
+            target="_blank"
+          >
+            <div>
+              <Image
+                priority
+                src="/images/prism_g.png"
+                height={250}
+                width={220}
+                alt="right"
+                id="scroll-right"
+                onClick={handleScroll}
+              />
+              <section className={styles.description}>
+                <h3> Prism Gallery</h3>
+                <p>A django project </p>
+              </section>
+            </div>
+          </Link>
         </section>
         <Image
           priority
