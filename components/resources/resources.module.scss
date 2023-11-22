@@ -21,6 +21,7 @@
   z-index: 10;
   display: grid;
   align-items: center;
+  flex-grow: 1;
   &:hover {
     background-color: rgb(33, 24, 24);
     color: rgb(251, 241, 241);
