@@ -187,7 +187,7 @@ export default function Highlight() {
 
   return (
     <div className={styles.highlight}>
-      <h2 className={`${styles.heading2} ${styles.dark - text}`}>
+      <h2 className={`${styles.heading2} ${styles.darktext}`}>
         Product Center
       </h2>
       <section className={styles.slider}>
