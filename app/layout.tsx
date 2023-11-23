@@ -2,6 +2,7 @@ import Banner from "../components/banner";
 import Header from "../components/header";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import UtilScript from "./utils/UtilScript";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <UtilScript />
       <body>
         <Banner />
         <Header />
