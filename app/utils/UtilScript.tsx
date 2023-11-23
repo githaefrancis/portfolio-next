@@ -5,9 +5,12 @@ export default function UtilScript() {
   return (
     <>
       <Script
+      id='google_tag'
         src={`https://www.googletagmanager.com/gtag/js?id=${G_ANALYTICS_ID}`}
       ></Script>
-      <Script>
+      <Script
+      id='gtagconfig'
+      >
         {`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
