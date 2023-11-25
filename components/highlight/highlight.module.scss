@@ -36,11 +36,14 @@
 .horizontalScroll {
   min-width: 100%;
   display: flex;
+  align-items: center;
   flex-wrap: nowrap;
   flex-shrink: 1;
   gap: 20px;
+  padding:16px 8px;
   white-space: nowrap;
   overflow-x: auto;
+  background-color: rgb(232, 229, 229);
   //   max-width: 20rem;
   &::-webkit-scrollbar {
     width: 2px;
@@ -79,6 +82,7 @@
     // height: 500;
     transform: scale(1.05);
   }
+
   flex-shrink: 1.5;
 }
 
@@ -86,6 +90,7 @@
   z-index: -1000;
   transition: transform 0.5s ease-in-out;
   margin-bottom: 1rem;
+  padding: 10px 0px;
 }
 
 .description {
