@@ -151,7 +151,7 @@ function Project({
       target="_blank"
       key={index}
     >
-      <div class="project_card">
+      <div className="project_card">
         <Image
           priority
           src={project.banner}
