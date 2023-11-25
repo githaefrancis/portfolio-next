@@ -21,6 +21,12 @@
   grid-gap: 0.5rem;
   padding: 6px;
   align-items: center;
+
+  // box-shadow: 2px 2px #555;
+}
+
+.slider:hover {
+  // z-index: 100;
 }
 @media only screen and (max-width: 992px) {
   .slider {
@@ -31,6 +37,7 @@
   min-width: 100%;
   display: flex;
   flex-wrap: nowrap;
+  flex-shrink: 1;
   gap: 20px;
   white-space: nowrap;
   overflow-x: auto;
@@ -68,9 +75,16 @@
 /* stylelint-disable-next-line selector-pseudo-element-no-unknown */
 
 .link {
-  & hover {
-    height: 500;
+  &:hover {
+    // height: 500;
+    transform: scale(1.05);
   }
+  flex-shrink: 1.5;
+}
+
+.project_card {
+  z-index: -1000;
+  transition: transform 0.5s ease-in-out;
   margin-bottom: 1rem;
 }
 
