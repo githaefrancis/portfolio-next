@@ -6,26 +6,22 @@
   //   background-color: rgba(#a5afa5, 0.1);
   background: hsla(117, 87%, 78%, 1);
 
-  background: radial-gradient(
-    circle,
-    hsla(117, 87%, 78%, 1) 0%,
-    hsla(178, 40%, 75%, 1) 50%,
-    hsla(10, 18%, 93%, 1) 100%
-  );
+  background: radial-gradient(circle,
+      hsla(117, 87%, 78%, 1) 0%,
+      hsla(178, 40%, 75%, 1) 50%,
+      hsla(10, 18%, 93%, 1) 100%);
 
-  background: -moz-radial-gradient(
-    circle,
-    hsla(117, 87%, 78%, 1) 0%,
-    hsla(178, 40%, 75%, 1) 50%,
-    hsla(10, 18%, 93%, 1) 100%
-  );
+  background: -moz-radial-gradient(circle,
+      hsla(117, 87%, 78%, 1) 0%,
+      hsla(178, 40%, 75%, 1) 50%,
+      hsla(10, 18%, 93%, 1) 100%);
 
-  background: -webkit-radial-gradient(
-    circle,
-    hsla(117, 87%, 78%, 1) 0%,
-    hsla(178, 40%, 75%, 1) 50%,
-    hsla(10, 18%, 93%, 1) 100%
-  );
+  background: -webkit-radial-gradient(circle,
+      hsla(117, 87%, 78%, 1) 0%,
+      hsla(178, 40%, 75%, 1) 50%,
+      hsla(10, 18%, 93%, 1) 100%);
+
+
 }
 
 .intro {
@@ -37,13 +33,16 @@
     display: flex;
     align-items: center;
   }
+
   .heading2 {
     text-align: center;
   }
+
   .heading1 {
     text-align: center;
     font-size: 36px;
   }
+
   .info {
     display: flex;
     flex-direction: column;
@@ -54,11 +53,12 @@
 
 .socials {
   display: flex;
-  justify-content: space-around!important;
+  justify-content: space-around !important;
   align-items: center;
-  gap:10px;
+  gap: 10px;
 
 }
+
 @media screen and (max-width: 992px) {
   .header {
     grid-template-columns: auto;

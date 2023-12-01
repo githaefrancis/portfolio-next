@@ -8,10 +8,19 @@
 }
 
 .container {
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px  2px rgb(123, 131, 102);
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px rgb(123, 131, 102);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: opacity 0.3s ease-in-out, transform 0.3s;
+
+  &:hover {
+    opacity: 1;
+    transform: translate3d(0px, 400px, 0px) scale3d(1, 1, 1) rotateX(50deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
 }
