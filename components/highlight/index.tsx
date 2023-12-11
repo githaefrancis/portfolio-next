@@ -5,12 +5,22 @@ import Image from "next/image";
 import Link from "next/link";
 
 const projects = [
-  // {
-  //   name: "Prism Gallery",
-  //   link: "https://prism-gallery.ofasnplugs.com",
-  //   description: "A django project",
-  //   banner: "/images/prism_g.png",
-  // },
+  {
+    id: "puregem",
+    name: "Medical Equipment Website",
+    banner: "/images/puregem.png",
+    description: "Landing page for Medical Equipment",
+    languages: "next js",
+    link: "https://puregem.ofasnplugs.com",
+  },
+  {
+    id: "gitmine",
+    name: "Git Mine",
+    banner: "/images/gitmine.png",
+    description: "Search for users and repos on github",
+    languages: "html,css,angular,typescript,bootstrap",
+    link: "https://githaefrancis.github.io/gitmine/",
+  },
   {
     id: "photographyWebsite",
     name: "Photography Website",
@@ -102,14 +112,6 @@ const projects = [
       "Lists Quotes and allows the user to add more.You can Upvote and downvote a quote",
     languages: "html,css,angular,typescript,bootstrap,jquery",
     link: "https://githaefrancis.github.io/quotes/",
-  },
-  {
-    id: "gitmine",
-    name: "Git Mine",
-    banner: "/images/gitmine.png",
-    description: "Search for users and repos on github",
-    languages: "html,css,angular,typescript,bootstrap",
-    link: "https://githaefrancis.github.io/gitmine/",
   },
   {
     id: "prism-gallery",
