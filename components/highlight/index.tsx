@@ -6,6 +6,14 @@ import Link from "next/link";
 
 const projects = [
   {
+    id: "rms",
+    name: "Rental Management",
+    banner: "/images/rms.png",
+    description: "Rental Management System",
+    languages: "next js",
+    link: "https://rms.ofasnplugs.com",
+  },
+  {
     id: "puregem",
     name: "Medical Equipment Website",
     banner: "/images/puregem.png",
