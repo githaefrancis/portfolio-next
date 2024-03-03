@@ -12,7 +12,9 @@ export default function Header() {
     <section className={styles.header}>
       <section className={styles.intro}>
         <div className={styles.info}>
-          <h1 className={styles.heading1}>Francis Githae</h1>
+          <h1 className={`${styles.heading1} ${styles.title}`}>
+            Francis Githae
+          </h1>
           <h3 className={styles.heading2}>Software Developer</h3>
           <p>
             <MdEmail size={24} /> mureithigithae@gmail.com
@@ -27,7 +29,7 @@ export default function Header() {
           </div>
         </div>
       </section>
-      <Carousel />
+      {/* <Carousel /> */}
     </section>
   );
 }

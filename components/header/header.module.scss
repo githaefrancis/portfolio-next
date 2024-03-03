@@ -1,27 +1,31 @@
 .header {
-  display: grid;
-  grid-template-columns: 55% auto;
+  // display: grid;
+  // grid-template-columns: 55% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2rem 2rem;
-  min-height: 80vh;
-  //   background-color: rgba(#a5afa5, 0.1);
-  background: hsla(117, 87%, 78%, 1);
+  min-height: 75vh;
+  // background: radial-gradient(
+  //   circle,
+  //   hsla(117, 87%, 78%, 1) 0%,
+  //   hsla(178, 40%, 75%, 1) 50%,
+  //   hsla(10, 18%, 93%, 1) 100%
+  // );
 
-  background: radial-gradient(circle,
-      hsla(117, 87%, 78%, 1) 0%,
-      hsla(178, 40%, 75%, 1) 50%,
-      hsla(10, 18%, 93%, 1) 100%);
+  // background: -moz-radial-gradient(
+  //   circle,
+  //   hsla(117, 87%, 78%, 1) 0%,
+  //   hsla(178, 40%, 75%, 1) 50%,
+  //   hsla(10, 18%, 93%, 1) 100%
+  // );
 
-  background: -moz-radial-gradient(circle,
-      hsla(117, 87%, 78%, 1) 0%,
-      hsla(178, 40%, 75%, 1) 50%,
-      hsla(10, 18%, 93%, 1) 100%);
-
-  background: -webkit-radial-gradient(circle,
-      hsla(117, 87%, 78%, 1) 0%,
-      hsla(178, 40%, 75%, 1) 50%,
-      hsla(10, 18%, 93%, 1) 100%);
-
-
+  // background: -webkit-radial-gradient(
+  //   circle,
+  //   hsla(117, 87%, 78%, 1) 0%,
+  //   hsla(178, 40%, 75%, 1) 50%,
+  //   hsla(10, 18%, 93%, 1) 100%
+  // );
 }
 
 .intro {
@@ -41,6 +45,16 @@
   .heading1 {
     text-align: center;
     font-size: 36px;
+    margin-bottom: 14px;
+  }
+
+  .title {
+    overflow: hidden;
+    border-right: 0.015em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 4.5s steps(40, end) infinite;
+    animation-delay: 4.5s;
   }
 
   .info {
@@ -56,12 +70,39 @@
   justify-content: space-around !important;
   align-items: center;
   gap: 10px;
-
 }
 
-@media screen and (max-width: 992px) {
-  .header {
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
+// @media screen and (max-width: 992px) {
+//   .header {
+//     grid-template-columns: auto;
+//     grid-template-rows: auto auto;
+//   }
+// }
+
+/* The typing effect */
+
+// @keyframes typing {
+//   from {
+//     width: 0;
+//   }
+//   to {
+//     width: 100%;
+//   }
+// }
+@keyframes typing {
+  0%,
+  100% {
+    width: 0;
+  }
+  75% {
+    width: 100%;
+  }
+}
+@keyframes pause {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
   }
 }

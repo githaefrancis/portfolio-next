@@ -197,9 +197,7 @@ export default function Highlight() {
 
   return (
     <div className={styles.highlight}>
-      <h2 className={`${styles.heading2} ${styles.darktext}`}>
-        Product Center
-      </h2>
+      <h1>Product Center</h1>
       <section className={styles.slider}>
         <Image
           priority

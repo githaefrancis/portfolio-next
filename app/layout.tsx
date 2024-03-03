@@ -39,7 +39,7 @@ export default function RootLayout({
       <UtilScript />
       <body>
         <Banner />
-        <Header />
+        {/* <Header /> */}
         {children}
       </body>
     </html>
