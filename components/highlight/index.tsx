@@ -162,8 +162,11 @@ function Project({
       key={index}
     >
       <div className={styles.project_wrapper}>
-        <img
+        <Image
+          priority
           src={project.banner}
+          layout="fill"
+          objectCover="cover"
           // className={styles.project_image}
           alt="right"
         />
