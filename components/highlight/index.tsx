@@ -163,7 +163,6 @@ function Project({
     >
       <div className={styles.project_wrapper}>
         <img
-          priority
           src={project.banner}
           // className={styles.project_image}
           alt="right"
