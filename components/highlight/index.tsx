@@ -26,7 +26,7 @@ const projects = [
     name: "Git Mine",
     banner: "/images/gitmine.png",
     description: "Search for users and repos on github",
-    languages: "html,css,angular,typescript,bootstrap",
+    languages: "angular,typescript,bootstrap",
     link: "https://githaefrancis.github.io/gitmine/",
   },
   {
@@ -60,7 +60,7 @@ const projects = [
     name: "ReachOut Consel",
     banner: "/images/reachoutconsel.png",
     description: "Team project for a conselling service website.",
-    languages: "html,css,javascript,bootstrap,jquery",
+    languages: "javascript,bootstrap,jquery",
     link: "https://githaefrancis.github.io/ReachOut-Consel/",
   },
   {
@@ -68,7 +68,7 @@ const projects = [
     name: "Pet Wolf",
     banner: "/images/petwolf.png",
     description: "Blog for fictional pet wolf.",
-    languages: "html,css,javascript,jquery",
+    languages: "javascript,jquery",
     link: "https://githaefrancis.github.io/petwolf/",
   },
   {
@@ -76,7 +76,7 @@ const projects = [
     name: "Delani Studio",
     banner: "/images/delanistudio.png",
     description: "Landing page for a design company.",
-    languages: "html,css,javascript,jquery",
+    languages: "javascript,jquery",
     link: "https://githaefrancis.github.io/delani-studio/",
   },
   {
@@ -84,7 +84,7 @@ const projects = [
     name: "Pizzarana",
     banner: "/images/pizzarana.png",
     description: "Pizza ordering application.",
-    languages: "html,css,javascript,jquery",
+    languages: "javascript,jquery",
     link: "https://githaefrancis.github.io/pizzarana/",
   },
   {
@@ -92,7 +92,7 @@ const projects = [
     name: "Expense Tracker",
     banner: "/images/expensetracker.png",
     description: "Application to keep track of expenditure.",
-    languages: "html,css,javascript,jquery",
+    languages: "javascript,jquery",
     link: "https://githaefrancis.github.io/expense-tracker/",
   },
   {
@@ -101,7 +101,7 @@ const projects = [
     banner: "/images/akanamegenerator.png",
     description:
       "Application to look up your Akan name by providing your birthday.",
-    languages: "html,css,javascript,jquery",
+    languages: "javascript,jquery",
     link: "https://githaefrancis.github.io/akan-name-generator/",
   },
   {
@@ -109,7 +109,7 @@ const projects = [
     name: "Choma Zone",
     banner: "/images/chomazone.png",
     description: "Web application that list the best Nyama choma joints.",
-    languages: "html,css,javascript,jquery",
+    languages: "javascript,jquery",
     link: "https://githaefrancis.github.io/chomazone/",
   },
   {
@@ -118,7 +118,7 @@ const projects = [
     banner: "/images/quotes.png",
     description:
       "Lists Quotes and allows the user to add more.You can Upvote and downvote a quote",
-    languages: "html,css,angular,typescript,bootstrap,jquery",
+    languages: "angular,typescript,bootstrap,jquery",
     link: "https://githaefrancis.github.io/quotes/",
   },
   {
@@ -126,7 +126,7 @@ const projects = [
     name: "Prism Gallery",
     banner: "/images/prism-gallery.png",
     description: "Post and view photos",
-    languages: "html,css,django",
+    languages: "django",
     link: "https://prism-gallery.herokuapp.com/",
   },
   {
@@ -134,7 +134,7 @@ const projects = [
     name: "Invento App",
     banner: "/images/invento-app.png",
     description: "Manage equipment inventory",
-    languages: "html,css,django",
+    languages: "css,django",
     link: "https://githaefrancis.github.io/invento-frontend/",
   },
 ];
@@ -161,18 +161,23 @@ function Project({
       target="_blank"
       key={index}
     >
-      <div className="project_card">
-        <Image
+      <div className={styles.project_wrapper}>
+        <img
           priority
           src={project.banner}
-          height={300}
-          width={400}
+          // className={styles.project_image}
           alt="right"
         />
-        <section className={styles.description}>
-          <h3>{project.name}</h3>
-          {/* <p>{project.description} </p> */}
-        </section>
+        <div className={styles.description}>
+          <h3>
+            <span>{project.name}</span>
+          </h3>
+          <p>
+            {project.languages.split(",").map((language, index) => (
+              <span key={index}>{language}</span>
+            ))}
+          </p>
+        </div>
       </div>
     </Link>
   );
