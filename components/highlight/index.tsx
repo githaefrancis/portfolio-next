@@ -166,7 +166,7 @@ function Project({
           priority
           src={project.banner}
           layout="fill"
-          objectCover="cover"
+          objectFit="cover"
           // className={styles.project_image}
           alt="right"
         />
