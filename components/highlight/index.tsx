@@ -39,14 +39,6 @@ const projects = [
     link: "https://githaefrancis.github.io/week1-ip",
   },
   {
-    id: "streetWiseFood",
-    name: "Street Wise Food",
-    banner: "/images/streetfood.png",
-    description: "Restaurant website landing page.",
-    languages: "html, css",
-    link: "https://githaefrancis.github.io/street-food-website",
-  },
-  {
     id: "portfolio",
     name: "Portfolio",
     banner: "/images/portfolio.png",

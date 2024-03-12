@@ -10,25 +10,26 @@ import Link from "next/link";
 export default function Header() {
   return (
     <section className={styles.header}>
-      <section className={styles.intro}>
-        <div className={styles.info}>
-          <h1 className={`${styles.heading1} ${styles.title}`}>
-            Francis Githae
-          </h1>
-          <h3 className={styles.heading2}>Software Developer</h3>
-          <p>
-            <MdEmail size={24} /> mureithigithae@gmail.com
-          </p>
-          <div className={styles.socials}>
-            <Link href="https://github.com/githaefrancis" target="_blank">
-              <FaGithub size={28} />
-            </Link>
-            <Link href="https://twitter.com/frankgithae_dev" target="_blank">
-              <FaXTwitter size={28} />
-            </Link>
-          </div>
-        </div>
-      </section>
+      <h1 className={styles.title}>Francis Githae</h1>
+      <h2 className={styles.heading2}>Software Developer</h2>
+      <p className={styles.summary}>
+        <strong>I am passionate</strong> about tech and creating solutions.
+        <strong> I work </strong> with Next, React js, Node js , Python and
+        Django Technologies. I am
+        <strong> exploring</strong> C++ , GO , RUST languages. I am ever
+        searching to
+        <strong> join communities </strong>
+        and building products. <strong>Open source</strong> is one of my loves.
+      </p>
+      <div className={styles.socials}>
+        <Link href="https://github.com/githaefrancis" target="_blank">
+          <FaGithub size={28} />
+        </Link>
+        <Link href="https://twitter.com/frankgithae_dev" target="_blank">
+          <FaXTwitter size={28} />
+        </Link>
+      </div>
+
       {/* <Carousel /> */}
     </section>
   );

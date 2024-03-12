@@ -1,68 +1,28 @@
 .header {
-  // display: grid;
-  // grid-template-columns: 55% auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 2rem;
-  min-height: 75vh;
-  // background: radial-gradient(
-  //   circle,
-  //   hsla(117, 87%, 78%, 1) 0%,
-  //   hsla(178, 40%, 75%, 1) 50%,
-  //   hsla(10, 18%, 93%, 1) 100%
-  // );
-
-  // background: -moz-radial-gradient(
-  //   circle,
-  //   hsla(117, 87%, 78%, 1) 0%,
-  //   hsla(178, 40%, 75%, 1) 50%,
-  //   hsla(10, 18%, 93%, 1) 100%
-  // );
-
-  // background: -webkit-radial-gradient(
-  //   circle,
-  //   hsla(117, 87%, 78%, 1) 0%,
-  //   hsla(178, 40%, 75%, 1) 50%,
-  //   hsla(10, 18%, 93%, 1) 100%
-  // );
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 12px;
+  text-align: center;
 }
 
-.intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.title {
+  overflow: hidden;
+  border-right: 0.015em solid black;
+  white-space: nowrap;
+  animation: typing 4.5s steps(40, end) infinite;
+  animation-delay: 4.5s;
+  text-align: center;
+  font-size: 40px;
+  max-width: fit-content;
+}
 
-  p {
-    display: flex;
-    align-items: center;
-  }
-
-  .heading2 {
-    text-align: center;
-  }
-
-  .heading1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 14px;
-  }
-
-  .title {
-    overflow: hidden;
-    border-right: 0.015em solid black;
-    white-space: nowrap;
-    margin: 0 auto;
-    animation: typing 4.5s steps(40, end) infinite;
-    animation-delay: 4.5s;
-  }
-
-  .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
+.summary {
+  margin: 0 12rem;
+  line-height: 1.65;
+  font-weight: 500;
 }
 
 .socials {
@@ -70,14 +30,15 @@
   justify-content: space-around !important;
   align-items: center;
   gap: 10px;
+  margin-top: 14px;
 }
 
-// @media screen and (max-width: 992px) {
-//   .header {
-//     grid-template-columns: auto;
-//     grid-template-rows: auto auto;
-//   }
-// }
+@media screen and (max-width: 992px) {
+  .summary {
+    margin: 0 2rem;
+    line-height: 1.65;
+  }
+}
 
 /* The typing effect */
 
