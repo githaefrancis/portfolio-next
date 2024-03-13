@@ -23,6 +23,8 @@
   margin: 0 12rem;
   line-height: 1.65;
   font-weight: 500;
+  border: 1px dashed black;
+  padding: 6px;
 }
 
 .socials {
@@ -35,7 +37,7 @@
 
 @media screen and (max-width: 992px) {
   .summary {
-    margin: 0 2rem;
+    margin: 0 1rem;
     line-height: 1.65;
   }
 }

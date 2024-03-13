@@ -16,7 +16,7 @@ export default function Header() {
         <strong>I am passionate</strong> about tech and creating solutions.
         <strong> I work </strong> with Next, React js, Node js , Python and
         Django Technologies. I am
-        <strong> exploring</strong> C++ , GO , RUST languages. I am ever
+        <strong> exploring</strong> C++ , GO & RUST languages. I am ever
         searching to
         <strong> join communities </strong>
         and building products. <strong>Open source</strong> is one of my loves.
