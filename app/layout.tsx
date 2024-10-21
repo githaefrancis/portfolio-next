@@ -38,7 +38,7 @@ export default function RootLayout({
       </Head>
       <UtilScript />
       <body>
-        <Banner />
+        {/* <Banner /> */}
         {/* <Header /> */}
         {children}
       </body>
