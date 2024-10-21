@@ -20,7 +20,7 @@
 
 .slider {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto;
   min-width: 100%;
   grid-gap: 0.5rem;
   padding: 6px;
@@ -42,7 +42,6 @@
   min-width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-wrap: nowrap;
   flex-shrink: 1;
   gap: 20px;
