@@ -90,7 +90,7 @@ export default function Highlight() {
     <div className={styles.highlight}>
       <h1>Product Center</h1>
       <section className={styles.slider}>
-        <Image
+        {/* <Image
           priority
           src="/images/left-arrow.png"
           height={24}
@@ -98,13 +98,13 @@ export default function Highlight() {
           alt="left"
           id="scroll-left"
           onClick={handleScroll}
-        />
+        /> */}
         <section className={styles.horizontalScroll} ref={scrollContainerRef}>
           {projects.map((project, index) => (
             <Project project={project} key={index} index={index} />
           ))}
         </section>
-        <Image
+        {/* <Image
           priority
           src="/images/right-arrow.png"
           height={24}
@@ -112,7 +112,7 @@ export default function Highlight() {
           alt="right"
           id="scroll-right"
           onClick={handleScroll}
-        />
+        /> */}
       </section>
     </div>
   );
