@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.8"
 services:
   portfolio:
     build:
@@ -6,8 +6,8 @@ services:
       dockerfile: Dockerfile
       ports:
         - "3001:3001"
-      # environment:
-      #   - PUBLIC_NEXT_G_ANALYTICS_ID =${PUBLIC_NEXT_G_ANALYTICS_ID}
+      environment:
+        - PUBLIC_NEXT_G_ANALYTICS_ID =${PUBLIC_NEXT_G_ANALYTICS_ID}
       volumes:
         - .:/app
       networks:
