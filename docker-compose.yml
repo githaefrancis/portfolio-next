@@ -6,10 +6,8 @@ services:
       dockerfile: Dockerfile
       ports:
         - "3001:3001"
-      
-      env_file:
-        - ./.env
-
+      environment:
+        - PUBLIC_NEXT_G_ANALYTICS_ID =${PUBLIC_NEXT_G_ANALYTICS_ID}
       volumes:
         - .:/app
       networks:
