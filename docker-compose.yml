@@ -4,14 +4,14 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      ports:
-        - "3001:3001"
-      environment:
-        - PUBLIC_NEXT_G_ANALYTICS_ID =${PUBLIC_NEXT_G_ANALYTICS_ID}
-      volumes:
-        - .:/app
-      networks:
-        - proxy
+    ports:
+      - "3001:3001"
+    environment:
+      - PUBLIC_NEXT_G_ANALYTICS_ID =${PUBLIC_NEXT_G_ANALYTICS_ID}
+    volumes:
+      - .:/app
+    networks:
+      - proxy
 networks:
   proxy:
     external: true
