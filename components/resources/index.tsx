@@ -8,8 +8,6 @@
 "use client";
 import Link from "next/link";
 import styles from "./resources.module.scss";
-import { LinkPreview } from "react-link-previewer";
-import "react-link-previewer/src/style.css";
 
 export default function Resources() {
   return (
