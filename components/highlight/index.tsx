@@ -62,16 +62,18 @@ function Project({
           // className={styles.project_image}
           alt="right"
         />
-        <div className={styles.description}>
-          <h3>
-            <span>{project.name}</span>
-          </h3>
-          <p>
-            {project.languages.split(",").map((language, index) => (
-              <span key={index}>{language}</span>
-            ))}
-          </p>
-        </div>
+        <Link href={project.link} target="_blank">
+          <div className={styles.description}>
+            <h3>
+              <span>{project.name}</span>
+            </h3>
+            <p>
+              {project.languages.split(",").map((language, index) => (
+                <span key={index}>{language}</span>
+              ))}
+            </p>
+          </div>
+        </Link>
       </div>
     </div>
     // </Link>

@@ -199,6 +199,9 @@
     width: 100vw;
     padding: 2rem;
   }
+  .project_wrapper:nth-child(2) {
+    flex-direction: column-reverse;
+  }
   .project_image {
     width: 100%;
     height: 300px;
