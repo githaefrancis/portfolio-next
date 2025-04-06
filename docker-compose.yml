@@ -5,15 +5,11 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3001:3000"
+      - "3001"
     environment:
       - PUBLIC_NEXT_G_ANALYTICS_ID=${PUBLIC_NEXT_G_ANALYTICS_ID}
     volumes:
       - .:/app
       - /app/node_modules
       - /app/.next
-    networks:
-      - proxy
-networks:
-  proxy:
-    external: true
+    
