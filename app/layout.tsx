@@ -1,10 +1,10 @@
 import Banner from "../components/banner";
 import Header from "../components/header";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Inter, DM_Sans } from "next/font/google";
 import UtilScript from "./utils/UtilScript";
 import Head from "next/head";
-const inter = Inter({ subsets: ["latin"] });
+const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Francis Githae Portfolio",
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={dmSans.className}>
       <Head>
         <meta name="robots" content="all" />
         <meta
