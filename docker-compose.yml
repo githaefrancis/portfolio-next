@@ -12,4 +12,8 @@ services:
       - .:/app
       - /app/node_modules
       - /app/.next
-    
+    networks:
+      - portfolio-network
+networks:
+  portfolio-network:
+    name: portfolio-network
