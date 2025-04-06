@@ -14,12 +14,10 @@ export default function Header() {
       <h2 className={styles.heading2}>Software Developer</h2>
       <p className={styles.summary}>
         <strong>I am passionate</strong> about tech and creating solutions.
-        <strong> I work </strong> with Next, React js, Node js , Python and
-        Django Technologies. I am
-        <strong> exploring</strong> C++ , GO & RUST languages. I am ever
-        searching to
-        <strong> join communities </strong>
-        and building products. <strong>Open source</strong> is one of my loves.
+        <strong> I work </strong> with Next, React js, Node js , Python &
+        Django.
+        <strong> Coding</strong> C++ , GO & RUST. I love
+        <strong> communities </strong>& <strong>Open source</strong>
       </p>
       <div className={styles.socials}>
         <Link href="https://github.com/githaefrancis" target="_blank">

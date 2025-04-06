@@ -39,13 +39,21 @@ function Project({
   index: number;
 }) {
   return (
-    <Link
-      href={project.link}
-      className={styles.link}
-      target="_blank"
-      key={index}
-    >
-      <div className={styles.project_wrapper}>
+    // <Link
+    //   href={project.link}
+    //   className={styles.link}
+    //   target="_blank"
+    //   key={index}
+    // >
+    <div className={styles.project_wrapper}>
+      <div className={styles.project_headline}>
+        <h2>{project.name}</h2>
+        <p>{project.description}</p>
+        <Link href={project.link} target="_blank">
+          <button className={styles.action_btn}>Check</button>
+        </Link>
+      </div>
+      <div className={styles.project_image}>
         <Image
           priority
           src={project.banner}
@@ -65,55 +73,19 @@ function Project({
           </p>
         </div>
       </div>
-    </Link>
+    </div>
+    // </Link>
   );
 }
 
 export default function Highlight() {
-  const scrollContainerRef = useRef<HTMLImageElement>(null);
-  const scrollAmount = 400;
-
-  const handleScroll = (event: React.MouseEvent<HTMLImageElement>) => {
-    const target = event.target as HTMLButtonElement;
-    if (target?.id === "scroll-left") {
-      if (scrollContainerRef.current !== null) {
-        scrollContainerRef.current.scrollLeft -= scrollAmount;
-      }
-    } else if (target?.id === "scroll-right") {
-      if (scrollContainerRef.current !== null) {
-        scrollContainerRef.current.scrollLeft += scrollAmount;
-      }
-    }
-  };
-
   return (
-    <div className={styles.highlight}>
-      <h1>Product Center</h1>
-      <section className={styles.slider}>
-        {/* <Image
-          priority
-          src="/images/left-arrow.png"
-          height={24}
-          width={24}
-          alt="left"
-          id="scroll-left"
-          onClick={handleScroll}
-        /> */}
-        <section className={styles.horizontalScroll} ref={scrollContainerRef}>
-          {projects.map((project, index) => (
-            <Project project={project} key={index} index={index} />
-          ))}
-        </section>
-        {/* <Image
-          priority
-          src="/images/right-arrow.png"
-          height={24}
-          width={24}
-          alt="right"
-          id="scroll-right"
-          onClick={handleScroll}
-        /> */}
-      </section>
+    <div className="content">
+      <div className={styles.highlight}>
+        {projects.map((project, index) => (
+          <Project project={project} key={index} index={index} />
+        ))}
+      </div>
     </div>
   );
 }
